@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <style>
+	        #title {
+				color: rgb(0, 6, 15);
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
+                font-size: 35px;
+				text-align: center;
+				margin-top: -45px;
+				font-family: "Noir Pro", Monospace;
+				src: url('file://D:\Organized Files\Programming Files\HTML Portfolio\Fonts\NoirPro-Regular.ttf');
+			}
+			
+			#names {
+				color: rgb(0, 6, 15);
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
+                font-size: 25px;
+				text-align: center;
+				margin-top: -45px;
+				font-family: "Noir Pro", monospace;
+			}
+			
+			#bottom { 
+                position:absolute;                  
+                bottom:0;      
+				right:0;
+				left:0;
+            } 
+			
+			.blink_text {
+				color: rgb(0, 6, 15);
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
+                font-size: 25px;
+				text-align: center;
+				margin-top: -45px;
+				font-family: "Noir Pro", monospace;
+				
+				animation:9s blinker linear infinite;
+				-webkit-animation:13s blinker linear infinite;
+				-moz-animation:13s blinker linear infinite;
+			}
+
+				@-moz-keyframes blinker {  
+				 0% { opacity: 1.0; }
+				 15% { opacity: 0.0; }
+				 85% { opacity: 0.0; }
+				 100% { opacity: 1.0; }
+				}
+
+				@-webkit-keyframes blinker {  
+				 0% { opacity: 1.0; }
+				 15% { opacity: 0.0; }
+				 85% { opacity: 0.0; }
+				 100% { opacity: 1.0; }
+				}
+
+				@keyframes blinker {  
+				 0% { opacity: 1.0; }
+				 15% { opacity: 0.0; }
+				 85% { opacity: 0.0; }
+				 100% { opacity: 1.0; }
+				}
+			
+			.element-3 {
+				-webkit-animation-delay: -9.35s;
+				animation-delay: -9.35s;
+			}	
+			.element-2 {
+				-webkit-animation-delay: -3.15s;
+				animation-delay: -3.15s;
+			}
+			.element-1 {
+				-webkit-animation-delay: -6.5s;
+				animation-delay: -6.5s;
+			}
+	    </style>
+	    
+		<title>Home Page</title>
+	</head>
+	<body style="background-color:#c4bfb7;">
+		<div class="Home Menu">
+			<!--#F0EDEE-->
+			<!--Skills, Portfolio, Education/Prior Jobs, References, Contact-->
+			<!--Student, Programmer, Developer, Data Scientist-->
+			<center><img style="width: 25%; margin-top: 90px; " src="D:\Organized Files\Programming Files\HTML Portfolio\LogoShadow.png" alt="Logo"/></center>
+		
+			<div id="title">
+				<h1 class="main">Robert van der Leeuw</h1>
+		    </div>
+			
+			<div id="names">
+				<h1 class="blink_text">Programmer</h1>
+				<h1 class="blink_text element-1">Student</h1>
+				<h1 class="blink_text element-2">Developer</h1>
+				<h1 class="blink_text element-3">Data Scientist</h1>
+		    </div>
+			
+			<div id="bottom">
+				<div align="center">
+					<table>
+					  <tr>
+						<img style="width:105px;" src="D:\Organized Files\Programming Files\HTML Portfolio\Contact.png" alt="Contact" hspace="15"/>
+						<img style="width:105px;" src="D:\Organized Files\Programming Files\HTML Portfolio\Contact.png" alt="Contact" hspace="15"/>
+						<img style="width:105px;" src="D:\Organized Files\Programming Files\HTML Portfolio\Contact.png" alt="Contact" hspace="15"/>
+						<img style="width:105px;" src="D:\Organized Files\Programming Files\HTML Portfolio\Contact.png" alt="Contact" hspace="15"/>
+						<img style="width:105px;" src="D:\Organized Files\Programming Files\HTML Portfolio\Contact.png" alt="Contact" hspace="15"/>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
