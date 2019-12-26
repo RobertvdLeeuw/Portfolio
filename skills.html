@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <style>
+			@font-face {
+				font-family: 'NoirPro';
+				src: url('https://robertvdleeuw.github.io/Portfolio/noirpro-regular-webfont.woff') format('woff'),
+				  url('https://robertvdleeuw.github.io/Portfolio/NoirPro-Regular.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			
+			@font-face {
+				font-family: 'NoirProMed';
+				src: url('https://robertvdleeuw.github.io/Portfolio/NoirPro-Medium.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			
+			.skills {
+				background-color:#B5B0AA;
+				position: relative; 
+				z-index: 1;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.SideBar {
+				font-family: 'NoirPro', monospace;
+				font-size: 25px;
+				line-height: 18px;
+				position: fixed; 
+				z-index: 1;
+				right:0;
+				top:0;
+				margin-left:auto;
+				margin-right:0;
+				width:20%;
+				height:100%;
+				color: rgb(0, 6, 15);
+				background-color:rgb(28, 44, 66);
+			}  
+			
+	        #title {
+				color: rgb(0, 6, 15);
+                text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
+                font-size: 35px;
+				font-weight: 200;
+				text-align: center;
+				margin-top: -45px;
+				font-family: 'NoirPro', monospace;
+			}
+			
+			#links {
+				transition: 0.2s;
+				font-size: 25px;
+				line-height: 18px;
+				color: rgb(0, 6, 15);
+				text-decoration: none;
+				font-family: 'NoirPro', monospace;
+			}
+			
+			#links:hover {
+				color: rgba(229, 235, 234, 0.3);
+				cursor: pointer;
+				transform: translate(10px, 0px);
+			}
+			
+	    </style>
+	    
+		<title>Skills</title>
+	</head>
+	<body style="background-color:#c4bfb7;">
+		<div>
+			<div class="skills">
+				<p>Beetje C# hier,</p>
+			</div>
+			<div class="skills">
+				<p>Beetje Python daar.</p>
+			</div>
+		</div>
+	
+		<div class="SideBar">
+			<div id="options" style="position: relative; left: 20px; top: 10px;">
+				<p>Options</p>
+			</div>
+		
+			<div style="position: relative; left: 35px; top: 80px;">
+				<table>
+					<tr>
+						<a style="text-decoration: none" href="index.html"><p id="links">Home</p></a>
+					</tr>
+					<tr>
+						<a style="text-decoration: none" href="skills.html"><p id="links">Skills</p></a>
+					</tr>
+					<tr>
+						<a style="text-decoration: none" href="https://google.com"><p id="links">Portfolio</p></a>
+					</tr>
+					<tr>
+						<a style="text-decoration: none" href="https://google.com"><p id="links">Education / Prior Jobs</p></a>
+					</tr>
+					<tr>
+						<a style="text-decoration: none" href="https://google.com"><p id="links">References</p></a>
+					</tr>
+					<tr>
+						<a style="text-decoration: none" href="https://google.com"><p id="links">Contact</p></a>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
