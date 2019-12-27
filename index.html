@@ -49,7 +49,7 @@
 				position: absolute;
 				width:99%;
 				text-align:center;
-				top: 72%;
+				top: 71%;
 				color: rgb(0, 6, 15);
                 text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
                 font-size: 25px;
@@ -110,6 +110,9 @@
 				font-size: 20px;
 				transition: 0.2s;
 				color: rgba(0, 0, 0, 0);
+				height: 1px;
+				cursor: default;
+				pointer-events: none;
 			}
 			
 			.iconlink {
@@ -118,7 +121,7 @@
 				top: -10px;
 			}
 			
-			.iconlink:hover {
+			#tablecell:hover .iconlink {
 				transform: translate(0px, -25px);
 				cursor: pointer;
 			}
