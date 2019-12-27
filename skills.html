@@ -17,7 +17,7 @@
 				font-style: normal;
 			}
 			
-			#Skills {
+			#Tab {
 				font-family: 'NoirPro', monospace;
 				background-color:#B5B0AA;
 				position: relative; 
@@ -25,7 +25,6 @@
 				left: 0%;
 				top: 0px;
 				width:79.75%;
-				height: 1085px;
 			}
 			
 			hr {
@@ -35,7 +34,15 @@
 				width: 97.5%;
 			}
 			
-			#Skills .title {
+			.vl {
+				border-left: 2px solid #4C4A47;
+				height: 125px;
+				position: absolute;
+				top: 190px;
+				left: 50%;
+			}
+			
+			#Tab .title {
 				position: relative;
 				left: 10px;
 				top: 5px;
@@ -43,14 +50,14 @@
 				font-size: 30px;
 			}
 			
-			#Skills h2.language {
+			#Tab h2.language {
 				position: relative;
 				left: 10px;
 				font-family: 'NoirPro', monospace;
 				font-size: 22.5px;
 			}
 			
-			#Skills p.description {
+			#Tab p.description {
 				position: relative;
 				width: 95%;
 				left: 20px;
@@ -59,7 +66,7 @@
 				font-size: 15px;
 			}
 			
-			#Skills h3.subtitle {
+			#Tab h3.subtitle {
 				position: relative;
 				left: 15px;
 				top: -10px;
@@ -110,30 +117,39 @@
 			
 	    </style>
 	    
-		<title>Skills</title>
+		<title>Skills & About Me</title>
 	</head>
 	<body style="background-color:#c4bfb7;">
 		<div style="position: relative; left: 0px; top: 0px;">
-			<div id="Skills">
+			<div id="Tab" style="height: 340px;">
+				<h1 class="title">About Me</h1>
+				<p class="description">&nbsp&nbspI have been programming since 2016. Since then, I've gone through just about every subgenre of programming seeing which one brings me the most amount of satisfaction. Eventually I stumbled on data analysis and since then that has been my favorite part of programming. I'm an extraverted realist, who is extremely motived when an interesting problem reaches my desk. I have been told by clients that I am good at thinking of creative solution and working independently.</p>
+				<h2 class="language" style="width: 50%; text-align: center; top: 15px;">Skills:</h2>
+				<h2 class="language" style="left: 50%; width: 50%; text-align: center; top: -36px;">Hobbies:</h2>
+				<p class="description" style="left: 21.5%; text-align: left; top: -40px; width;: 35%;">● Fluent In English<br>● Creative<br>● Independent<p>
+				<p class="description" style="left: 70.5%; text-align: left; top: -122px; width;: 35%;">● Programming<br>● Cooking<br>● Debating<p>
+				<div class="vl"></div>
+			</div>
+			<div id="Tab" style="height: 1085px;">
 				<h1 class="title">Coding Languages</h1> <!--C#, AHK, HTML, CSS, JS, Python, R-->
 				<img style="position: relative; left: 1%; top: 2%; width:85%;" src="https://robertvdleeuw.github.io/Portfolio/Languages.png" alt="Projects" hspace="15"/>
 				<p style="font-size: 3px;"><br></p>
 				<hr>
 				
 				<h2 class="language">C#</h2>
-				<p class="description">&nbsp&nbspI started with C# for game development as my first step in the coding world. I developed on and off from 2016 until 2018. Then in 2019, for a school project with two friends, I decided to really take this seriously. We worked hard and in a couple months, from May til September, created a alpha game called "Armed Conflict". Whilst working on Armed Conflict, I realized that I thoroughly enjoyed coding but that game development wasn't what I wanted to use to put bread on the table. After I stopped working on the project I started to write some basic applications in C# with the Windows Forms Library. I felt I was getting closer to what I truly wanted to do as a profession. </p>
+				<p class="description">&nbsp&nbspI started with C# for game development as my first step in the coding world. I developed on and off from 2016 until 2018. Then in 2019, for a school project with two friends, I decided to really take this seriously. We worked hard and in a couple months, from May til September, created a alpha game called "Armed Conflict". Whilst working on Armed Conflict, I realized that I thoroughly enjoyed coding but that game development wasn't what I wanted to use to put bread on the table. After I stopped working on the project I started to write some basic applications in C# with the Windows Forms Library. I felt I was getting closer to what I truly wanted to do as a profession. After that I tried some different things and found out that my favorite programming subgenre is data analysis.</p>
 				<h3 class="subtitle">My C# Skills:</h3>
 				<p class="description">&nbsp● Winforms<br>&nbsp● Excel Manipulation<br>&nbsp● Email Manipulation<br>&nbsp● Basic Data Analysis<br>&nbsp● Web Scraping<br>&nbsp● Data Serialization</p>
 				<hr>
 				
 				<h2 class="language">HTML, CSS & JavaScript</h2>
-				<p class="description">&nbsp&nbspDue to my experience with web scraping I started to subconsiously learn HTML, just by staring at it for hours on end. After a while I got quite intruigued and wanted to dip my toes in the water of web development to see if that clicks with me as well. Eventually, I went on to build a website when I didn't have any other work to do for clients. The website that I eventually built is this very on, for my resume, portfolio, contact, ectetera.</p>
+				<p class="description">&nbsp&nbspDue to my experience with web scraping I started to subconsiously learn HTML, just by staring at it for hours on end. After a while I got quite intruigued and wanted to dip my toes in the water of web development to see if that clicks with me as well. Eventually, I went on to build a website when I didn't have any other work to do for clients. The website that I eventually built is this very one, for my resume, portfolio, contact, ectetera.</p>
 				<hr>
 				
 				<h2 class="language">Python</h2>
-				<p class="description">&nbsp&nbspWhen I started to do some serious work for a client at the end of 2019 I needed to run a scraper every week or so for about 6 months. I thought that the best way to go about it was to buy a Raspberry Pi 4 to run this, and some other codes, 24/7 as a server-like system. Because Raspbians main programming language is Python, I thought it would be easiest to just learn that for the scraper(s), seeing as it is a very useful language to learn anyway.</p>
+				<p class="description">&nbsp&nbspWhen I started to do some serious work for a client at the end of 2019 I needed to run a scraper every week or so for about 6 months. I thought that the best way to go about it was to buy a Raspberry Pi 4 to run this, and some other codes, 24/7 as a server-like system. Because Raspbians main programming language is Python, I thought it would be easiest to just learn that for the scraper(s), seeing as it is a very useful language to learn anyway without too steep of a learning curve.</p>
 				<h3 class="subtitle">My Python Skills:</h3>
-				<p class="description">&nbsp● Data Scraping<br>&nbsp● Data Serialization<br>&nbsp● Keyboard/Mouse Automation<br>&nbsp● Sockets Code Communication</p>
+				<p class="description">&nbsp● Web Scraping<br>&nbsp● Data Serialization<br>&nbsp● Keyboard/Mouse Automation<br>&nbsp● Sockets Code Communication</p>
 			</div>
 		</div>
 	
@@ -148,7 +164,7 @@
 						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/"><p id="links">Home</p></a>
 					</tr>
 					<tr>
-						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/skills"><p id="links">Skills</p></a>
+						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/skills"><p id="links">Skills & About Me</p></a>
 					</tr>
 					<tr>
 						<a style="text-decoration: none" href="https://google.com"><p id="links">Portfolio</p></a>
