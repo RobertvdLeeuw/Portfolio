@@ -17,12 +17,54 @@
 				font-style: normal;
 			}
 			
-			.skills {
+			#Skills {
+				font-family: 'NoirPro', monospace;
 				background-color:#B5B0AA;
 				position: relative; 
 				z-index: 1;
+				left: 0%;
+				top: 0px;
+				width:79.75%;
+				height: 1070px;
+			}
+			
+			hr {
+				border-top: 2px solid #4C4A47;
+				border-bottom: 1px solid rgba(0, 0, 0, 0);
+				position: relative;
+				width: 97.5%;
+			}
+			
+			#Skills .title {
+				position: relative;
 				left: 10px;
-				top: 10px;
+				top: 5px;
+				font-family: 'NoirPro', monospace;
+				font-size: 30px;
+			}
+			
+			#Skills h2.language {
+				position: relative;
+				left: 10px;
+				font-family: 'NoirPro', monospace;
+				font-size: 22.5px;
+			}
+			
+			#Skills p.description {
+				position: relative;
+				width: 95%;
+				left: 20px;
+				top: -10px;
+				font-family: 'NoirPro', monospace;
+				font-size: 15px;
+			}
+			
+			#Skills h3.subtitle {
+				position: relative;
+				left: 15px;
+				top: -10px;
+				font-family: 'NoirPro', monospace;
+				font-size: 17.5px;
 			}
 			
 			.SideBar {
@@ -71,12 +113,27 @@
 		<title>Skills</title>
 	</head>
 	<body style="background-color:#c4bfb7;">
-		<div>
-			<div class="skills">
-				<p>Beetje C# hier,</p>
-			</div>
-			<div class="skills">
-				<p>Beetje Python daar.</p>
+		<div style="position: relative; left: 0px; top: 0px;">
+			<div id="Skills">
+				<h1 class="title">Coding Languages</h1> <!--C#, AHK, HTML, CSS, JS, Python, R-->
+				<img style="position: relative; left: 1%; top: 2%; width:85%;" src="https://robertvdleeuw.github.io/Portfolio/Languages.png" alt="Projects" hspace="15"/>
+				<p style="font-size: 3px;"><br></p>
+				<hr>
+				
+				<h2 class="language">C#</h2>
+				<p class="description">&nbsp&nbspI started with C# for game development as my first step in the coding world. I developed on and off from 2016 until 2018. Then in 2019, for a school project with two friends, I decided to really take this seriously. We worked hard and in a couple months, from May til September, created a alpha game called "Armed Conflict". Whilst working on Armed Conflict, I realized that I thoroughly enjoyed coding but that game development wasn't what I wanted to use to put bread on the table. After I stopped working on the project I started to write some basic applications in C# with the Windows Forms Library. I felt I was getting closer to what I truly wanted to do as a profession. </p>
+				<h3 class="subtitle">My C# Skills:</h3>
+				<p class="description">&nbsp● Winforms<br>&nbsp● Excel Manipulation<br>&nbsp● Email Manipulation<br>&nbsp● Basic Data Analysis<br>&nbsp● Web Scraping<br>&nbsp● Data Serialization</p>
+				<hr>
+				
+				<h2 class="language">HTML, CSS & JavaScript</h2>
+				<p class="description">&nbsp&nbspDue to my experience with web scraping I started to subconsiously learn HTML, just by staring at it for hours on end. After a while I got quite intruigued and wanted to dip my toes in the water of web development to see if that clicks with me as well. Eventually, I went on to build a website when I didn't have any other work to do for clients. The website that I eventually built is this very on, for my resume, portfolio, contact, ectetera.</p>
+				<hr>
+				
+				<h2 class="language">Python</h2>
+				<p class="description">&nbsp&nbspWhen I started to do some serious work for a client at the end of 2019 I needed to run a scraper every week or so for about 6 months. I thought that the best way to go about it was to buy a Raspberry Pi 4 to run this, and some other codes, 24/7 as a server-like system. Because Raspbians main programming language is Python, I thought it would be easiest to just learn that for the scraper(s), seeing as it is a very useful language to learn anyway.</p>
+				<h3 class="subtitle">My Python Skills:</h3>
+				<p class="description">&nbsp● Data Scraping<br>&nbsp● Data Serialization<br>&nbsp● Keyboard/Mouse Automation</p>
 			</div>
 		</div>
 	
@@ -88,10 +145,10 @@
 			<div style="position: relative; left: 35px; top: 80px;">
 				<table>
 					<tr>
-						<a style="text-decoration: none" href="index.html"><p id="links">Home</p></a>
+						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/"><p id="links">Home</p></a>
 					</tr>
 					<tr>
-						<a style="text-decoration: none" href="skills.html"><p id="links">Skills</p></a>
+						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/skills"><p id="links">Skills</p></a>
 					</tr>
 					<tr>
 						<a style="text-decoration: none" href="https://google.com"><p id="links">Portfolio</p></a>
