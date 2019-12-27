@@ -28,17 +28,6 @@
 				cursor: default;
 			}
 			
-			.iconlink {
-				transition: 0.3s;
-				position: relative;
-				top: -10px;
-			}
-			
-			.iconlink:hover {
-				transform: translate(0px, -25px);
-				cursor: pointer;
-			}
-			
 			#names {
 				color: rgb(0, 6, 15);
                 text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
@@ -57,14 +46,18 @@
             } 
 			
 			.blink_text {
+				position: absolute;
+				width:99%;
+				text-align:center;
+				top: 72%;
 				color: rgb(0, 6, 15);
                 text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.35);
                 font-size: 25px;
 				text-align: center;
 				margin-top: -45px;
-				font-family: "Noir Pro", monospace;
+				font-family: "NoirPro", monospace;
 				
-				animation:9s blinker linear infinite;
+				animation:13s blinker linear infinite;
 				-webkit-animation:13s blinker linear infinite;
 				-moz-animation:13s blinker linear infinite;
 			}
@@ -105,6 +98,33 @@
 			
 			.MainImg {
 				margin-top: 80px;
+				position: relative;
+				left: 0.15%;
+			}
+			
+			.icontext {
+				position: absolute;
+				top: 50px;
+				text-align: center;
+				font-family: "NoirPro", monospace;
+				font-size: 20px;
+				transition: 0.2s;
+				color: rgba(0, 0, 0, 0);
+			}
+			
+			.iconlink {
+				transition: 0.3s;
+				position: relative;
+				top: -10px;
+			}
+			
+			.iconlink:hover {
+				transform: translate(0px, -25px);
+				cursor: pointer;
+			}
+			
+			#tablecell:hover .icontext {
+				color: rgb(0, 6, 15);
 			}
 	    </style>
 	    
@@ -132,20 +152,25 @@
 				<div align="center">
 					<table>
 					  <tr>
-						<td class="iconlink">
-							<a href="https://robertvdleeuw.github.io/Portfolio/skills"><img style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Skills.png" alt="Skills" hspace="15"/></a>					
+						<td id="tablecell">
+							<a href="https://robertvdleeuw.github.io/Portfolio/skills"><img class="iconlink" style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Skills.png" alt="Skills" hspace="15"/></a>		
+							<p class="icontext" style="left: 34.25%;">Skills</p>
 						</td>
-						<td class="iconlink">
-							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Projects.png" alt="Projects" hspace="15"/></a>	
+						<td id="tablecell">
+							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img class="iconlink"  style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Projects.png" alt="Projects" hspace="15"/></a>	
+							<p class="icontext" style="left: 41%;">Portfolio</p>
 						</td>
-						<td class="iconlink">
-							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Education.png" alt="Education" hspace="15"/></a>	
+						<td id="tablecell">
+							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img class="iconlink"  style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/Education.png" alt="Education" hspace="15"/></a>	
+							<p class="icontext" style="left: 45%;">Education/Prior Jobs</p>
 						</td>
-						<td class="iconlink">
-							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/References.png" alt="References" hspace="15"/></a>	
+						<td id="tablecell">
+							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img class="iconlink"  style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/References.png" alt="References" hspace="15"/></a>	
+							<p class="icontext" style="left: 54.75%;">References</p>
 						</td>
-						<td class="iconlink">
-							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/ContactAlt.png" alt="Contact" hspace="15"/></a>	
+						<td id="tablecell">
+							<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_fade1"><img class="iconlink"  style="width:105px;" src="https://robertvdleeuw.github.io/Portfolio/ContactAlt.png" alt="Contact" hspace="15"/></a>	
+							<p class="icontext" style="left: 62.85%;">Contact</p>
 						</td>
 					  </tr>
 					</table>
