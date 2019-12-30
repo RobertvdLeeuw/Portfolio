@@ -87,7 +87,7 @@
 				width:20%;
 				height:100%;
 				color: rgb(0, 6, 15);
-				background-color:rgb(28, 44, 66);
+				background-color: rgb(28, 44, 66); /*#282726*/
 			}  
 			
 	        #title {
@@ -115,6 +115,12 @@
 				transform: translate(10px, 0px);
 			}
 			
+			.option {
+				position: relative;
+				top: 10px;
+				width: 20%;
+				height: auto;
+			}
 	    </style>
 	    
 		<title>Skills & About Me</title>
@@ -123,7 +129,7 @@
 		<div style="position: relative; left: 0px; top: 0px; width: 100%;">
 			<div id="Tab" style="height: 340px;">
 				<h1 class="title">About Me</h1>
-				<p class="description">&nbsp&nbspI have been programming since 2016. Since then, I've gone through just about every subgenre of programming seeing which one brings me the most amount of satisfaction. Eventually I stumbled on data analysis and since then that has been my favorite part of programming. I'm an extraverted realist, who is extremely motived when an interesting problem reaches my desk. I have been told by clients that I am good at thinking of creative solution and working independently.</p>
+				<p class="description">&nbsp&nbspI have been programming since 2016. Since then, I've gone through just about every subgenre of programming seeing which one brings me the most amount of satisfaction. Eventually I stumbled on data analysis and since then that has been my favorite part of programming. I'm an extraverted realist, who is extremely motived when an interesting problem reaches my desk. I have been told by clients that I am good at thinking of creative solutions and working independently.</p>
 				<h2 class="language" style="width: 50%; text-align: center; top: 15px;">Skills:</h2>
 				<h2 class="language" style="width: 50%; left: 50%;text-align: center; top: -36px;">Hobbies:</h2>
 				<p class="description" style="width;: 35%; left: 21.5%; text-align: left; top: -40px;">● Fluent In English<br>● Creative<br>● Independent<p>
@@ -155,10 +161,9 @@
 	
 		<div class="SideBar">
 			<div id="options" style="position: relative; left: 20px; top: 10px;">
-				<p>Options</p>
+				<img class="option" id="LightMode" src="https://robertvdleeuw.github.io/Portfolio/Sun.png" alt="Light Mode" hspace="15" onclick="DarkMode()"/>
 			</div>
-		
-			<div style="position: relative; left: 35px; top: 80px;">
+			<div style="position: relative; left: 35px; top: 40px;">
 				<table>
 					<tr>
 						<a style="text-decoration: none" href="https://robertvdleeuw.github.io/Portfolio/"><p id="links">Home</p></a>
@@ -181,5 +186,20 @@
 				</table>
 			</div>
 		</div>
+		<script language="javascript">
+			function DarkMode() {
+
+				if (document.getElementById("LightMode").src == "https://robertvdleeuw.github.io/Portfolio/Sun.png") 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Moon.png";
+					document.getElementById("LightMode").style = "width: 18.5%;";
+				}
+				else 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Sun.png";
+					document.getElementById("LightMode").style = "width: 20%;";
+				}
+			}
+		</script>
 	</body>
 </html>
