@@ -17,7 +17,7 @@
 				font-style: normal;
 			}
 			
-			#Tab {
+			.Tab {
 				font-family: 'NoirPro', monospace;
 				background-color:#B5B0AA;
 				position: relative; 
@@ -42,7 +42,7 @@
 				left: 50%;
 			}
 			
-			#Tab .title {
+			.Tab .title {
 				position: relative;
 				left: 10px;
 				top: 5px;
@@ -50,14 +50,14 @@
 				font-size: 30px;
 			}
 			
-			#Tab h2.language {
+			.Tab h2.language {
 				position: relative;
 				left: 10px;
 				font-family: 'NoirPro', monospace;
 				font-size: 22.5px;
 			}
 			
-			#Tab p.description {
+			.Tab p.description {
 				position: relative;
 				width: 95%;
 				left: 20px;
@@ -66,7 +66,7 @@
 				font-size: 15px;
 			}
 			
-			#Tab h3.subtitle {
+			.Tab h3.subtitle {
 				position: relative;
 				left: 15px;
 				top: -10px;
@@ -123,27 +123,33 @@
 				left: 5px;
 			}
 			
+			.option {
+				position: relative;
+				top: 10px;
+				width: 20%;
+				height: auto;
+			}
 	    </style>
 	    
 		<title>Education & Prior Jobs</title>
 	</head>
-	<body style="background-color:#c4bfb7;">
+	<body style="background-color:#c4bfb7;" id="HTMLBody">
 		<div style="position: relative; left: 0px; top: 0px; width: 100%;">
-			<div id="Tab" style="height: 130px;">
+			<div class="Tab" style="height: 130px;">
 				<h1 class="title">Education</h1>
 				<h3 class="subtitle">Revius Lyceum Doorn</h3>
 				<p class="description" style="top: -20px;">Need to add grades after graduation.</p>
 			</div>
 		</div>
 		<div style="position: relative; left: 0px; top: 0px; width: 100%;">
-			<div id="Tab" style="height: 90px;">
+			<div class="Tab" style="height: 90px;">
 				<h1 class="title">Prior Jobs</h1>
 				<p class="description">Need to add jobs later.</p>
 			</div>
 		</div>
 		<div class="SideBar">
 			<div id="options" style="position: relative; left: 20px; top: 10px;">
-				<p>Options</p>
+				<img class="option" id="LightMode" src="https://robertvdleeuw.github.io/Portfolio/Sun.png" alt="Light Mode" hspace="15" onclick="DarkMode()"/>
 			</div>
 		
 			<div style="position: relative; left: 35px; top: 80px;">
@@ -169,5 +175,27 @@
 				</table>
 			</div>
 		</div>
+		<script language="javascript">
+			function DarkMode() {
+				if (document.getElementById("LightMode").src == "https://robertvdleeuw.github.io/Portfolio/Sun.png") 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Moon.png";
+					document.getElementById("HTMLBody").style = "background-color: #2B292E;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #514e57;"
+					}
+				}
+				else 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Sun.png";
+					document.getElementById("HTMLBody").style = "background-color: #c4bfb7;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #B5B0AA;"
+					}
+				}
+			}
+		</script>
 	</body>
 </html>

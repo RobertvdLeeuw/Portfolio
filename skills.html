@@ -17,9 +17,9 @@
 				font-style: normal;
 			}
 			
-			#Tab {
+			.Tab {
 				font-family: 'NoirPro', monospace;
-				background-color:#B5B0AA;
+				background-color: #B5B0AA;
 				position: relative; 
 				z-index: 1;
 				left: 0%;
@@ -42,7 +42,7 @@
 				left: 50%;
 			}
 			
-			#Tab .title {
+			.Tab .title {
 				position: relative;
 				left: 10px;
 				top: 5px;
@@ -50,14 +50,14 @@
 				font-size: 30px;
 			}
 			
-			#Tab h2.language {
+			.Tab h2.language {
 				position: relative;
 				left: 10px;
 				font-family: 'NoirPro', monospace;
 				font-size: 22.5px;
 			}
 			
-			#Tab p.description {
+			.Tab p.description {
 				position: relative;
 				width: 95%;
 				left: 20px;
@@ -66,7 +66,7 @@
 				font-size: 15px;
 			}
 			
-			#Tab h3.subtitle {
+			.Tab h3.subtitle {
 				position: relative;
 				left: 15px;
 				top: -10px;
@@ -125,9 +125,9 @@
 	    
 		<title>Skills & About Me</title>
 	</head>
-	<body style="background-color:#c4bfb7;">
+	<body style="background-color:#c4bfb7;" id="HTMLBody">
 		<div style="position: relative; left: 0px; top: 0px; width: 100%;">
-			<div id="Tab" style="height: 340px;">
+			<div class="Tab" style="height: 340px;">
 				<h1 class="title">About Me</h1>
 				<p class="description">&nbsp&nbspI have been programming since 2016. Since then, I've gone through just about every subgenre of programming seeing which one brings me the most amount of satisfaction. Eventually I stumbled on data analysis and since then that has been my favorite part of programming. I'm an extraverted realist, who is extremely motived when an interesting problem reaches my desk. I have been told by clients that I am good at thinking of creative solutions and working independently.</p>
 				<h2 class="language" style="width: 50%; text-align: center; top: 15px;">Skills:</h2>
@@ -136,7 +136,7 @@
 				<p class="description" style="width: 150px; left: 70.5%; text-align: left; top: -122px;">● Programming<br>● Cooking<br>● Debating<p>
 				<div class="vl"></div>
 			</div>
-			<div id="Tab" style="height: 1085px;">
+			<div class="Tab" style="height: 1085px;">
 				<h1 class="title">Coding Languages</h1> <!--C#, AHK, HTML, CSS, JS, Python, R-->
 				<img style="position: relative; left: 1%; top: 2%; width:85%;" src="https://robertvdleeuw.github.io/Portfolio/Languages.png" alt="Projects" hspace="15"/>
 				<p style="font-size: 3px;"><br></p>
@@ -188,14 +188,23 @@
 		</div>
 		<script language="javascript">
 			function DarkMode() {
-
 				if (document.getElementById("LightMode").src == "https://robertvdleeuw.github.io/Portfolio/Sun.png") 
 				{
 					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Moon.png";
+					document.getElementById("HTMLBody").style = "background-color: #2B292E;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #514e57;"
+					}
 				}
 				else 
 				{
 					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Sun.png";
+					document.getElementById("HTMLBody").style = "background-color: #c4bfb7;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #B5B0AA;"
+					}
 				}
 			}
 		</script>

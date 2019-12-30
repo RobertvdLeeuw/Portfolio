@@ -129,11 +129,26 @@
 			#tablecell:hover .icontext {
 				color: rgb(0, 6, 15);
 			}
+			
+			.options {
+				position: absolute;
+			}
+			
+			.option {
+				position: absolute;
+				left: 1815px;
+				width: 75px;
+				height: auto;
+			}
 	    </style>
 	    
 		<title>Home Page</title>
 	</head>
-	<body style="background-color:#c4bfb7;">
+	<body style="background-color:#c4bfb7;" id="HTMLBody">
+		<div id="options" style="position: absolute;">
+			<img class="option" id="LightMode" src="https://robertvdleeuw.github.io/Portfolio/Sun.png" alt="Light Mode" hspace="15" onclick="DarkMode()"/>
+		</div>
+			
 		<div class="Home Menu">
 			<!--#F0EDEE-->
 			<!--Skills, Portfolio, Education/Prior Jobs, References, Contact-->
@@ -180,5 +195,27 @@
 				</div>
 			</div>
 		</div>
+		<script language="javascript">
+			function DarkMode() {
+				if (document.getElementById("LightMode").src == "https://robertvdleeuw.github.io/Portfolio/Sun.png") 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Moon.png";
+					document.getElementById("HTMLBody").style = "background-color: #2B292E;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #514e57;"
+					}
+				}
+				else 
+				{
+					document.getElementById("LightMode").src = "https://robertvdleeuw.github.io/Portfolio/Sun.png";
+					document.getElementById("HTMLBody").style = "background-color: #c4bfb7;";
+					
+					for (var i = 0; i < document.getElementsByClassName("Tab").length; i++) {
+						document.getElementsByClassName("Tab")[i].style = "background-color: #B5B0AA;"
+					}
+				}
+			}
+		</script>
 	</body>
 </html>
